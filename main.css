@@ -135,10 +135,8 @@ body.lock {
 #app {
   position: relative;
   width: 100vw;
-  max-width: 100rem;
-  height: 100%;
+  max-width: 100vw;
   min-height: 100vh;
-  margin: 0 auto;
 }
 
 #popup {
@@ -169,7 +167,12 @@ body.lock {
 
 }
 
-.name {
+.about {
+  position: relative;
+  height: 50rem;
+}
+
+.about .name {
   position: absolute;
   right: 10rem;
   box-sizing: border-box;
@@ -177,14 +180,14 @@ body.lock {
   padding-top: 8rem;
 }
 
-.name svg {
+.about .name svg {
 }
 
-.name svg .fill {
+.about .name svg .fill {
   fill: #333;
 }
 
-.name .moon {
+.about .name .moon {
   position: absolute;
   top: 0;
   right: 4em;
@@ -194,18 +197,12 @@ body.lock {
   animation-play-state: paused;
 }
 
-.name .moon .fill {
+.about .name .moon .fill {
   fill: #efda63;
 }
 
-.name:hover .moon {
+.about .name:hover .moon {
   animation-play-state: running;
-}
-
-.about {
-  position: absolute;
-  top: 10rem;
-  right: 4rem;
 }
 
 @keyframes rocking {
@@ -229,7 +226,7 @@ body.lock {
 .about .photo {
   position: absolute;
   top: 22rem;
-  right: 0;
+  right: 5rem;
   width: 25rem;
   height: 25rem;
 }
@@ -274,7 +271,7 @@ body.lock {
   line-height: 1.6em;
   position: absolute;
   top: 28rem;
-  right: 6rem;
+  right: 10rem;
   width: 46rem;
 }
 
@@ -378,9 +375,9 @@ body.lock {
 }
 
 .contact {
-  position: absolute;
-  bottom: 5em;
-  left: 12em;
+  position: relative;
+  width: 30rem;
+  margin: 10rem auto;
 }
 
 .contact .moon {
@@ -398,7 +395,6 @@ body.lock {
 
 .contact .social {
   padding-top: 3em;
-  text-align: -webkit-right;
 }
 
 .contact .social a {
@@ -417,4 +413,24 @@ body.lock {
 
 .contact .social a:hover svg .fill {
   fill: #c99dce;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10rem;
+}
+
+.names .name {
+  width: 300px;
+  aspect-ratio: 9 / 16;
+  /*transform: scale(0.3);*/
+}
+
+.names .name video {
+  width: 100%;
 }
