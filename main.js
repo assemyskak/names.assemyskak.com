@@ -23,8 +23,6 @@ const names = document.querySelectorAll('.names .name');
 names.forEach(el => {
   const video = el.querySelector('video');
   const progress = el.querySelector('.progress');
-  el.addEventListener('mouseenter', () => playVideo(el));
-  el.addEventListener('mouseleave', () => pauseVideo(el));
   video.addEventListener('timeupdate', (e) => {
     progress.style.width = `${Math.ceil(e.target.currentTime / e.target.duration * 100)}%`;
   });
