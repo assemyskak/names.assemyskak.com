@@ -1,6 +1,47 @@
-const onScroll = () => {
-  console.log(Math.round(scrollY))
-};
+function playVideo(el) {
+  el.classList.add('playing')
+  const video = el.querySelector('video');
+  if (video.paused) {
+    clearTimeout(video.__resetTimer);
+    video.play();
+  }
+}
+
+function pauseVideo(el) {
+  el.classList.remove('playing')
+  const video = el.querySelector('video');
+  if (!video.paused) {
+    video.pause();
+    video.__resetTimer = setTimeout(() => {
+      video.currentTime = 0;
+    }, 1000)
+  }
+}
+
+
+const names = document.querySelectorAll('.names .name');
+names.forEach(el => {
+  const video = el.querySelector('video');
+  const progress = el.querySelector('.progress');
+  el.addEventListener('mouseenter', () => playVideo(el));
+  el.addEventListener('mouseleave', () => pauseVideo(el));
+  video.addEventListener('timeupdate', (e) => {
+    progress.style.width = `${Math.ceil(e.target.currentTime / e.target.duration * 100)}%`;
+  });
+})
+
+function onScroll() {
+  const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+  const screenCenter = screenHeight / 2;
+  names.forEach(el => {
+    const center = el.getBoundingClientRect().top + (el.clientHeight / 2);
+    if (Math.abs(screenCenter - center) <= 100) {
+      playVideo(el);
+    } else {
+      pauseVideo(el);
+    }
+  });
+}
 
 let timer = null;
 addEventListener('scroll', () => {
@@ -11,14 +52,3 @@ addEventListener('scroll', () => {
     });
   }
 });
-
-document.querySelectorAll('.names .name').forEach(el => {
-  const video = el.querySelector('video');
-  const progress = el.querySelector('.progress');
-  el.addEventListener('mouseenter', () => video.play());
-  el.addEventListener('mouseleave', () => video.pause());
-  video.addEventListener('timeupdate', (e) => {
-    progress.style.width = `${Math.ceil(e.target.currentTime / e.target.duration * 100)}%`;
-  });
-})
-

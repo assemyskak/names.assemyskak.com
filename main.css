@@ -286,17 +286,31 @@ body.lock {
   left: 0;
   width: 0;
   height: 3px;
-  transition: width 500ms linear, background-color 200ms;
+  transition: width 500ms linear, opacity 200ms;
+  opacity: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(52, 130, 199, 255);
 }
 
-.names .name:hover .progress {
-  /*background-color: #efda63;*/
-  background-color: rgba(52, 130, 199, 255);
+.names .name.playing .progress {
+  opacity: 1;
 }
 
 .names .name video {
   width: 100%;
+}
+
+.names .name img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 200ms;
+  opacity: 1;
+}
+
+.names .name.playing img {
+  opacity: 0;
 }
