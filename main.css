@@ -111,7 +111,7 @@ html {
   font-kerning: normal;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
   html {
     font-size: 10px;
   }
@@ -135,8 +135,9 @@ body.lock {
 #app {
   position: relative;
   width: 100vw;
-  max-width: 100vw;
+  max-width: 100rem;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 #popup {
@@ -169,15 +170,20 @@ body.lock {
 
 .about {
   position: relative;
-  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  flex-wrap: wrap;
 }
 
 .about .name {
-  position: absolute;
-  right: 10rem;
-  box-sizing: border-box;
   width: 30rem;
-  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about .name svg {
@@ -188,9 +194,6 @@ body.lock {
 }
 
 .about .name .moon {
-  position: absolute;
-  top: 0;
-  right: 4em;
   display: block;
   width: 8em;
   animation: rocking 1s infinite linear;
@@ -224,10 +227,8 @@ body.lock {
 }
 
 .about .photo {
-  position: absolute;
-  top: 22rem;
-  right: 5rem;
   width: 25rem;
+  margin: 10rem 5rem 0 0;
   height: 25rem;
 }
 
@@ -266,22 +267,16 @@ body.lock {
 }
 
 .about .text {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-weight: 200;
   line-height: 1.6em;
-  position: absolute;
-  top: 28rem;
-  right: 10rem;
-  width: 46rem;
 }
 
 .about .text p:nth-child(1) {
-  font-size: 1.4em;
-  width: 10rem;
+  font-size: 1.6em;
 }
 
 .about .text p:nth-child(2) {
-  width: 24rem;
 }
 
 .about .text p:nth-child(3) {
@@ -293,53 +288,6 @@ body.lock {
 
 .about .text p:nth-child(5) {
   width: 10rem;
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (max-width: 480px) {
-  .about .name {
-    width: 38rem;
-  }
-
-  .about .name .moon {
-    top: -1rem;
-    right: 5rem;
-    width: 9.3rem;
-  }
-
-  .about .photo {
-    top: 25rem;
-    right: 11rem;
-    width: 35rem;
-    height: 35rem;
-  }
-
-  .about .text {
-    font-size: 2.9rem;
-    top: 61rem;
-    right: 2rem;
-    width: 50rem;
-  }
-
-  .about .text p:nth-child(1) {
-    width: 50rem;
-  }
-
-  .about .text p:nth-child(2) {
-    width: 50rem;
-  }
 }
 
 .moon {
