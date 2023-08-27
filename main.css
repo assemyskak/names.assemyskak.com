@@ -270,27 +270,28 @@ body.lock {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: 10rem;
+  /* gap: 10rem; */
 }
 
 .names .name {
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   aspect-ratio: 9 / 16;
   /*transform: scale(0.3);*/
 }
 
 .names .name .progress {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 0;
-  height: 3px;
+  height: 2px;
   transition: width 500ms linear, opacity 200ms;
   opacity: 0;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  background-color: rgba(52, 130, 199, 255);
+  /* border-bottom-right-radius: 3px; */
+  /* border-bottom-left-radius: 3px; */
+  background-color: #fff;
 }
 
 .names .name.playing .progress {

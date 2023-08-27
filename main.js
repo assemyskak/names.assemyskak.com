@@ -33,7 +33,7 @@ function onScroll() {
   const screenCenter = screenHeight / 2;
   names.forEach(el => {
     const center = el.getBoundingClientRect().top + (el.clientHeight / 2);
-    if (Math.abs(screenCenter - center) <= 100) {
+    if (Math.abs(screenCenter - center) <= 50) {
       playVideo(el);
     } else {
       pauseVideo(el);
