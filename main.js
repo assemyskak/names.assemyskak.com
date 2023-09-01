@@ -1,5 +1,5 @@
 function playVideo(el) {
-  el.classList.add('playing')
+  el.classList.add('playing');
   const video = el.querySelector('video');
   if (video.paused) {
     clearTimeout(video.__resetTimer);
@@ -8,31 +8,30 @@ function playVideo(el) {
 }
 
 function pauseVideo(el) {
-  el.classList.remove('playing')
+  el.classList.remove('playing');
   const video = el.querySelector('video');
   if (!video.paused) {
     video.pause();
     video.__resetTimer = setTimeout(() => {
       video.currentTime = 0;
-    }, 1000)
+    }, 1000);
   }
 }
-
 
 const names = document.querySelectorAll('.names .name');
 names.forEach(el => {
   const video = el.querySelector('video');
   const progress = el.querySelector('.progress');
-  video.addEventListener('timeupdate', (e) => {
-    progress.style.width = `${Math.ceil(e.target.currentTime / e.target.duration * 100)}%`;
+  video.addEventListener('timeupdate', e => {
+    progress.style.width = `${Math.ceil((e.target.currentTime / e.target.duration) * 100)}%`;
   });
-})
+});
 
 function onScroll() {
   const screenHeight = window.innerHeight || document.documentElement.clientHeight;
   const screenCenter = screenHeight / 2;
   names.forEach(el => {
-    const center = el.getBoundingClientRect().top + (el.clientHeight / 2);
+    const center = el.getBoundingClientRect().top + el.clientHeight / 2;
     if (Math.abs(screenCenter - center) <= 50) {
       playVideo(el);
     } else {

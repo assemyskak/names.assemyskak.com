@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1vw;
   color: #333;
   font-kerning: normal;
@@ -51,21 +51,22 @@ body.lock {
 }
 
 #popup.animated {
-  transition: border-radius 300ms ease 0ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration), left var(--animation-duration), opacity var(--animation-duration);
+  transition: border-radius 300ms ease 0ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration),
+    left var(--animation-duration), opacity var(--animation-duration);
 }
 
 #popup.opened {
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  transition: border-radius 300ms ease 200ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration), left var(--animation-duration), opacity var(--animation-duration);
+  transition: border-radius 300ms ease 200ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration),
+    left var(--animation-duration), opacity var(--animation-duration);
   pointer-events: all;
   opacity: 1;
   border-radius: 0;
 }
 
 #popup .content {
-
 }
 
 .about {
