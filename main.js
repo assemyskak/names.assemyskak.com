@@ -28,7 +28,7 @@ names.forEach(el => {
 });
 
 function onScroll() {
-  document.documentElement.classList.toggle('scrolled', window.scrollY > 0);
+  document.documentElement.classList.toggle('scrolled', window.scrollY > 500);
   const screenHeight = window.innerHeight || document.documentElement.clientHeight;
   const screenCenter = screenHeight / 2;
   names.forEach(el => {
