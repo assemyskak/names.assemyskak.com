@@ -8,7 +8,13 @@ html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1vw;
   color: #333;
+  background: #59ae8d;
   font-kerning: normal;
+}
+
+html.scrolled {
+  /* last name color, to preserve overscroll color */
+  background: #b8628d;
 }
 
 @media all and (min-width: 800px) {
@@ -35,215 +41,48 @@ body.lock {
 #app {
   position: relative;
   width: 100vw;
-  max-width: 100rem;
   min-height: 100vh;
   margin: 0 auto;
 }
 
-#popup {
-  position: fixed;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-  opacity: 0;
-  border-radius: 50vmax;
-}
-
-#popup.animated {
-  transition: border-radius 300ms ease 0ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration),
-    left var(--animation-duration), opacity var(--animation-duration);
-}
-
-#popup.opened {
-  overflow-y: auto;
-  width: 100vw;
-  height: 100vh;
-  transition: border-radius 300ms ease 200ms, width var(--animation-duration), height var(--animation-duration), top var(--animation-duration),
-    left var(--animation-duration), opacity var(--animation-duration);
-  pointer-events: all;
-  opacity: 1;
-  border-radius: 0;
-}
-
-#popup .content {
-}
-
-.about {
+.contact {
   position: relative;
   display: flex;
   align-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 5rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2em;
+  background: #59ae8d;
 }
 
-.about .name {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.contact .name {
   width: 30rem;
-}
-
-.about .name svg {
-}
-
-.about .name svg .fill {
-  fill: #333;
-}
-
-.about .name .moon {
-  display: block;
-  width: 8em;
-  animation: rocking 1s infinite linear;
-  animation-play-state: paused;
-}
-
-.about .name .moon .fill {
-  fill: #efda63;
-}
-
-.about .name:hover .moon {
-  animation-play-state: running;
-}
-
-@keyframes rocking {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-10deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.about .photo {
-  width: 25rem;
-  height: 25rem;
-  margin: 10rem 5rem 0 0;
-}
-
-.photo {
-  position: relative;
-}
-
-.photo .img {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding: 2.5rem;
-}
-
-.photo .img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-.photo svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.photo svg .background {
-  fill: #fff;
-}
-
-.photo svg .fill {
-  fill: #f4a988;
-}
-
-.about .text {
-  font-size: 3rem;
-  font-weight: 200;
-  line-height: 1.6em;
-}
-
-.about .text p:nth-child(1) {
-  font-size: 1.6em;
-}
-
-.about .text p:nth-child(2) {
-}
-
-.about .text p:nth-child(3) {
-  margin-top: 13rem;
-}
-
-.about .text p:nth-child(4) {
-}
-
-.about .text p:nth-child(5) {
-  width: 10rem;
-}
-
-.moon {
-  position: relative;
-  display: block;
-  transition: transform 100ms;
-  animation: rocking 1s infinite linear;
-  animation-play-state: paused;
-}
-
-.moon .fill {
-  fill: #efda63;
-}
-
-.moon:hover {
-  animation-play-state: running;
-}
-
-.moon-50 svg {
-  transform: rotate(50deg);
-}
-
-.moon-320 svg {
-  transform: rotate(320deg);
-}
-
-.moon-90 svg {
-  transform: rotate(90deg);
-}
-
-.moon-270 svg {
-  transform: rotate(270deg);
-}
-
-.contact {
-  position: relative;
-  width: 30rem;
-  margin: 10rem auto;
-}
-
-.contact .moon {
-  width: 17em;
-  height: 17em;
-}
-
-.contact .label {
-  font-size: 4em;
-  font-weight: 200;
-  position: absolute;
-  top: 1.8em;
-  left: 2.3em;
 }
 
 .contact .social {
-  padding-top: 3em;
+  font-size: 1em;
+  text-align: right;
+}
+
+@media all and (min-width: 400px) {
+  .contact .name {
+    width: 15rem;
+  }
+
+  .contact .social {
+    font-size: 0.5em;
+  }
+}
+
+.contact .name svg {
+}
+
+.contact .name svg .fill {
+  fill: #fff;
 }
 
 .contact .social a {
@@ -257,29 +96,25 @@ body.lock {
 
 .contact .social a svg .fill {
   transition: fill var(--animation-duration);
-  fill: #f4a988;
+  fill: #fff;
 }
 
 .contact .social a:hover svg .fill {
-  fill: #c99dce;
+  fill: #fff;
 }
 
 .names {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  /* gap: 10rem; */
+}
+
+.names .container {
 }
 
 .names .name {
   position: relative;
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
   aspect-ratio: 9 / 16;
-  /*transform: scale(0.3);*/
 }
 
 .names .name .progress {
@@ -290,8 +125,6 @@ body.lock {
   height: 2px;
   transition: width 500ms linear, opacity 200ms;
   opacity: 0;
-  /* border-bottom-right-radius: 3px; */
-  /* border-bottom-left-radius: 3px; */
   background-color: #fff;
 }
 

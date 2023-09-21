@@ -28,6 +28,7 @@ names.forEach(el => {
 });
 
 function onScroll() {
+  document.documentElement.classList.toggle('scrolled', window.scrollY > 0);
   const screenHeight = window.innerHeight || document.documentElement.clientHeight;
   const screenCenter = screenHeight / 2;
   names.forEach(el => {
@@ -41,7 +42,7 @@ function onScroll() {
 }
 
 let timer = null;
-addEventListener('scroll', () => {
+addEventListener('scroll', e => {
   if (!timer) {
     timer = requestAnimationFrame(() => {
       onScroll();
