@@ -12,11 +12,6 @@ html {
   font-kerning: normal;
 }
 
-html.scrolled {
-  /* last name color, to preserve overscroll color */
-  background: #524988;
-}
-
 @media all and (min-width: 800px) {
   html {
     font-size: 10px;
@@ -45,7 +40,7 @@ body.lock {
   margin: 0 auto;
 }
 
-.contact {
+header {
   position: relative;
   display: flex;
   align-content: center;
@@ -59,47 +54,73 @@ body.lock {
   background: #59ae8d;
 }
 
-.contact .name {
+footer {
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2em;
+  background: #59ae8d;
+}
+
+header .name {
   width: 30rem;
 }
 
-.contact .social {
+footer .name {
+  width: 30rem;
+}
+
+header .social {
   font-size: 1em;
   text-align: right;
 }
 
 @media all and (min-width: 400px) {
-  .contact .name {
+  header .name {
     width: 15rem;
   }
 
-  .contact .social {
+  header .social {
     font-size: 0.5em;
+  }
+
+  footer .name {
+    width: 15rem;
   }
 }
 
-.contact .name svg {
+header .name svg {
 }
 
-.contact .name svg .fill {
+header .name svg .fill {
   fill: #fff;
 }
 
-.contact .social a {
+footer .name svg .fill {
+  fill: #fff;
+}
+
+header .social a {
   margin: 1.2em;
 }
 
-.contact .social a svg {
+header .social a svg {
   width: 5em;
   height: 5em;
 }
 
-.contact .social a svg .fill {
+header .social a svg .fill {
   transition: fill var(--animation-duration);
   fill: #fff;
 }
 
-.contact .social a:hover svg .fill {
+header .social a:hover svg .fill {
   fill: #fff;
 }
 
