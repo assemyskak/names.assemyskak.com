@@ -12,7 +12,7 @@ html {
   font-kerning: normal;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 900px) {
   html {
     font-size: 10px;
   }
@@ -40,39 +40,28 @@ body.lock {
   margin: 0 auto;
 }
 
+.content {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 header {
   position: relative;
+  padding: 6vh 2rem 2rem 2rem;
+  background: #59ae8d;
+}
+
+header .content {
   display: flex;
   align-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 2em;
-  background: #59ae8d;
-}
-
-footer {
-  position: relative;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 2em;
-  background: #59ae8d;
 }
 
 header .name {
-  width: 30rem;
-}
-
-footer .name {
   width: 30rem;
 }
 
@@ -81,28 +70,10 @@ header .social {
   text-align: right;
 }
 
-@media all and (min-width: 400px) {
-  header .name {
-    width: 15rem;
-  }
-
-  header .social {
-    font-size: 0.5em;
-  }
-
-  footer .name {
-    width: 15rem;
-  }
-}
-
 header .name svg {
 }
 
 header .name svg .fill {
-  fill: #fff;
-}
-
-footer .name svg .fill {
   fill: #fff;
 }
 
@@ -124,7 +95,147 @@ header .social a:hover svg .fill {
   fill: #fff;
 }
 
-.names {
+@media all and (min-width: 400px) {
+  header .name {
+    width: 28rem;
+  }
+
+  header .social {
+    font-size: 0.5em;
+  }
+}
+
+@media all and (min-width: 900px) {
+  header .name {
+    width: 280px;
+  }
+}
+
+footer {
+  position: relative;
+  padding: 6rem 2rem 20vh 2rem;
+  background: #59ae8d;
+}
+
+footer .content {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+footer .name {
+  width: 30rem;
+}
+
+footer .name svg .fill {
+  fill: #fff;
+}
+
+@media all and (min-width: 400px) {
+  footer .name {
+    width: 28rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  footer .name {
+    width: 280px;
+  }
+}
+
+.about {
+  font-size: 3em;
+  line-height: 1.3em;
+  color: #ffffff;
+  background: #524988;
+}
+
+.about p {
+  padding: 0.4rem 0;
+}
+
+.about .content {
+  padding: 6rem;
+}
+
+.about .me {
+  max-width: 200px;
+  margin: 0 auto 6rem auto;
+  background: transparent url('./img/AssemYskak.jpg') center center no-repeat;
+  background-size: contain;
+  aspect-ratio: 9 / 16;
+}
+
+.about .welcome,
+.about .bio,
+.about .project {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.about .welcome {
+  font-size: 1.7em;
+  margin-bottom: 6rem;
+  padding-top: 1rem;
+}
+
+@media all and (min-width: 400px) {
+  .about {
+    font-size: 14px;
+  }
+
+  .about .me {
+    max-width: 280px;
+    margin-bottom: 3rem;
+  }
+
+  .about .welcome,
+  .about .bio,
+  .about .project {
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .about {
+    font-size: 16px;
+  }
+
+  .about .content {
+    display: grid;
+    padding: 5rem 0;
+    grid-template-columns: 280px auto;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .about .me {
+    order: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 3;
+  }
+
+  .about .welcome,
+  .about .bio,
+  .about .project {
+    max-width: 100%;
+    padding-left: 6rem;
+    grid-column: 2;
+  }
+
+  .about .welcome {
+    order: 2;
+  }
+
+  .about .bio {
+    order: 3;
+  }
+
+  .about .project {
+    order: 4;
+  }
 }
 
 .names .container {
@@ -144,7 +255,9 @@ header .social a:hover svg .fill {
   left: 0;
   width: 0;
   height: 2px;
-  transition: width 500ms linear, opacity 200ms;
+  transition:
+    width 500ms linear,
+    opacity 200ms;
   opacity: 0;
   background-color: #fff;
 }
