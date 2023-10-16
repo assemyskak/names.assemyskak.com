@@ -9,6 +9,7 @@ function playVideo(el) {
 function pauseVideo(el) {
   el.classList.remove('playing');
   if (el.$video && !el.$video.paused) {
+    el.__already_played = true;
     el.$video.pause();
     el.$video.__resetTimer = setTimeout(() => {
       el.$video.currentTime = 0;
@@ -83,8 +84,12 @@ function onScroll() {
     updateInfo(el, distance);
     const currentDistance = window.innerWidth >= 400 ? DISTANCE : DISTANCE / 2;
     if (distance <= currentDistance) {
-      playVideo(el);
+      if (!el.__already_played) {
+        playVideo(el);
+      }
     } else {
+      // reset
+      el.__already_played = false;
       pauseVideo(el);
     }
   });
