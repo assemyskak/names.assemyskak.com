@@ -7,7 +7,8 @@
 html {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1vw;
-  color: #333;
+  overflow-x: hidden;
+  color: #000;
   background: #59ae8d;
   font-kerning: normal;
 }
@@ -20,7 +21,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 
 body {
@@ -246,7 +247,53 @@ footer .name svg .fill {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  cursor: pointer;
   aspect-ratio: 9 / 16;
+}
+
+.names .name .info {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  padding: 2em;
+  cursor: pointer;
+  transition:
+    background 500ms,
+    opacity 500ms;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+.names .name.opened .info {
+  visibility: visible;
+  opacity: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media all and (min-width: 1200px) {
+  .names .name {
+    cursor: default;
+  }
+
+  .names .name .info {
+    left: 100%;
+    visibility: visible;
+    cursor: default;
+  }
+}
+
+.names .name .info h2 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.names .name .info p {
+  margin-bottom: 0.5em;
 }
 
 .names .name .progress {
