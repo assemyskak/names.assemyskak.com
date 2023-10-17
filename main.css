@@ -54,20 +54,23 @@ header {
 }
 
 header .content {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  position: relative;
+  height: 8rem;
 }
 
 header .name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   width: 30rem;
+  margin-left: -15rem;
 }
 
 header .social {
   font-size: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   text-align: right;
 }
 
@@ -96,9 +99,11 @@ header .social a:hover svg .fill {
   fill: #fff;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 600px) {
   header .name {
+    left: 0;
     width: 28rem;
+    margin-left: 0;
   }
 
   header .social {
@@ -135,7 +140,7 @@ footer .name svg .fill {
   fill: #fff;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 600px) {
   footer .name {
     width: 28rem;
   }
@@ -178,12 +183,12 @@ footer .name svg .fill {
 }
 
 .about .welcome {
-  font-size: 1.7em;
+  font-size: 1.5em;
   margin-bottom: 6rem;
   padding-top: 1rem;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 600px) {
   .about {
     font-size: 14px;
   }
