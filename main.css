@@ -168,6 +168,7 @@ footer .name svg .fill {
 }
 
 .about .me {
+  width: 100%;
   max-width: 200px;
   margin: 0 auto 6rem auto;
   background: transparent url('./img/AssemYskak.jpg') center center no-repeat;
