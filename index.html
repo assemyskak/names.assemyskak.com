@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="preload" href="./img/AssemYskak.jpg" as="image" />
   </head>
-  <body>
+  <body class="ru">
     <div id="app">
       <header class="contact">
         <div class="content">
@@ -32,6 +32,66 @@
               <use xlink:href="./img/name.svg#name" class="fill" />
             </svg>
           </div>
+
+          <div class="lang">
+            <a href="#ru">RU</a>
+            <a href="#en">EN</a>
+            <!--<a href="#kz">KZ</a>-->
+          </div>
+        </div>
+      </header>
+
+      <section class="about">
+        <div class="content">
+          <h1 class="welcome">
+            <span data-lang="ru">Добро пожаловать в мою галерею!</span>
+            <span data-lang="en">Welcome to my gallery!</span>
+          </h1>
+          <div class="bio">
+            <div data-lang="ru">
+              <p>
+                Меня зовут Асем Ыскак, и я &mdash; художница и фэшн иллюстратор. В моем портфолио есть сотрудничество с такими брендами, как Max Mara, Tiffany,
+                Интертоп, Topstretching и другими. Я участвовала на различных выставках, мои иллюстрации печатались в глянцевых журналах.
+              </p>
+              <p>Мой главный источник вдохновения &mdash; это женщины и их внутренний мир.</p>
+            </div>
+            <div data-lang="en">
+              <p>
+                My name is Assem Yskak, and I am an artist and fashion illustrator. My portfolio includes collaborations with brands such as Max Mara, Tiffany,
+                Intertop, Topstretching, and others. I have participated in various exhibitions, my illustrations have been printed in magazines.
+              </p>
+              <p>My main source of inspiration is women and their inner world.</p>
+            </div>
+          </div>
+          <div class="me">&nbsp;</div>
+          <div class="project">
+            <div data-lang="ru">
+              <p>
+                Проект &laquo;Имена&raquo; &mdash; это моя личная исследовательская работа, в которой я вместе с моими Instagram подписчицами исследую казахские
+                женские имена. Мы все индивидуальны, но какая-та схожесть и влияние имени на человека меня порой удивляет. Анализируя смысл и характер каждого
+                имени я создаю уникальные образы (аватары) для девушек. Каждый аватар сочетает в себе традиционные элементы с современным стилем.
+              </p>
+              <p>
+                Через мои именные аватары я стремлюсь показать счастливых женщин, чувствующих любовь. Чтобы женщина ассоциируя себя с именем, укрепляла бы свою
+                собственную ценность и любовь к себе.
+              </p>
+              <p>Проект продолжается. Каждую неделю я дополняю его новым именем.</p>
+            </div>
+
+            <div data-lang="en">
+              <p>
+                The "Names" project is my personal research in which I, along with my Instagram followers, explore Kazakh women's names. We are all individual,
+                but sometimes I am amazed by some similarity and the influence of a name on a person. By analyzing the meaning and character of each name I
+                create unique avatars for women. Each avatar combines traditional elements with a modern style.
+              </p>
+              <p>
+                Through my name avatars, I strive to depict happy women who feel loved. So that a woman, associating herself with a name, would reinforce her
+                own worth and love for herself.
+              </p>
+              <p>The project continues. Every week I update it with a new name.</p>
+            </div>
+          </div>
+
           <div class="social">
             <a class="instagram" href="https://www.instagram.com/assemyskak" title="Instagram: @aseemyskak" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="0 0 512 512">
@@ -52,32 +112,6 @@
             </a>
           </div>
         </div>
-      </header>
-
-      <section class="about">
-        <div class="content">
-          <h1 class="welcome">Добро пожаловать в мою галерею!</h1>
-          <div class="bio">
-            <p>
-              Меня зовут Асем Ыскак, и я &mdash; художница и фэшн иллюстратор. В моем портфолио есть сотрудничество с такими брендами, как Max Mara, Tiffany,
-              Интертоп, Topstretching и другими. Я участвовала на различных выставках, мои иллюстрации печатались в глянцевых журналах.
-            </p>
-            <p>Мой главный источник вдохновения &mdash; это женщины и их внутренний мир.</p>
-          </div>
-          <div class="me">&nbsp;</div>
-          <div class="project">
-            <p>
-              Проект &laquo;Имена&raquo; &mdash; это моя личная исследовательская работа, в которой я вместе с моими Instagram подписчицами исследую казахские
-              женские имена. Мы все индивидуальны, но какая-та схожесть и влияние имени на человека меня порой удивляет. Анализируя смысл и характер каждого
-              имени я создаю уникальные образы (аватары) для девушек. Каждый аватар сочетает в себе традиционные элементы с современным стилем.
-            </p>
-            <p>
-              Через мои именные аватары я стремлюсь показать счастливых женщин, чувствующих любовь. Чтобы женщина ассоциируя себя с именем, укрепляла бы свою
-              собственную ценность и любовь к себе.
-            </p>
-            <p>Проект продолжается. Каждую неделю я дополняю его новым именем.</p>
-          </div>
-        </div>
       </section>
 
       <section class="names">
@@ -89,16 +123,31 @@
             <img src="./names/Assem.jpg" alt="Assem" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Әсем&raquo;</h2>
-              <p>В переводе с казахского означает "Красивая".</p>
-              <p>Она:</p>
-              <p>Часто круглолицая, с пухлыми губами, пышные (кудрявые), непослушные волосы, часто высокие, с хорошей фигурой и светлой кожей.</p>
-              <p>
-                По характеру &mdash; добрые, нежные, спокойные, внимательные, чуткие, любят смеяться, шутить, свободолюбивые, независимые, заботливые,
-                преданные, умеют искренне дружить. С виду сильные, но в душе ранимые и очень чувствительные.
-              </p>
-              <p>Әсем &mdash; творческие девушки, со способностями к живописи и к рукоделию. Любят мечтать, придумывать и создавать что-то новое.</p>
-              <p>Она гармонично красивая как внутри, так и снаружи.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Әсем&raquo;</h2>
+                <p>В переводе с казахского означает "Красивая".</p>
+                <p>Она:</p>
+                <p>Часто круглолицая, с пухлыми губами, пышные (кудрявые), непослушные волосы, часто высокие, с хорошей фигурой и светлой кожей.</p>
+                <p>
+                  По характеру &mdash; добрые, нежные, спокойные, внимательные, чуткие, любят смеяться, шутить, свободолюбивые, независимые, заботливые,
+                  преданные, умеют искренне дружить. С виду сильные, но в душе ранимые и очень чувствительные.
+                </p>
+                <p>Әсем &mdash; творческие девушки, со способностями к живописи и к рукоделию. Любят мечтать, придумывать и создавать что-то новое.</p>
+                <p>Она гармонично красивая как внутри, так и снаружи.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Assem&raquo;</h2>
+                <p>In translation from Kazakh means "Beautiful".</p>
+                <p>She is:</p>
+                <p>Often round-faced, with plump lips, lush (curly), unruly hair, often tall, with a good figure and fair skin.</p>
+                <p>
+                  In character &mdash; kind, gentle, calm, attentive, sensitive, love to laugh, joke, freedom-loving, independent, caring, devoted, can be
+                  sincerely friendly. They appear strong, but are vulnerable and very sensitive at heart.
+                </p>
+                <p>Assem &mdash; creative girls, with talents for painting and handicrafts. They love to dream, invent and create something new.</p>
+                <p>She is harmoniously beautiful both inside and out.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -111,17 +160,33 @@
             <img src="./names/Aigul.jpg" alt="Aigul" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Айгүл&raquo;</h2>
-              <p>В переводе с казахского &laquo;Айгүл&raquo; означает &laquo;Лунный цветок&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Добрая, мудрая, жизнерадостная, честная, душевная, веселая, великодушная, позитивная, всегда улыбается, сопереживающая, чувствительная, ранимая,
-                поддержит словом и делом, талантливая, интересно все что касается души и энергии, добросовестная, а также беспощадная к врагам
-              </p>
-              <p>
-                По внешности были разные описания ( но общее это &mdash; высокие и статные, большие круглые глаза, гордый, прямой взгляд и позитивное
-                настроение, которое излучает все ее лицо.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Айгүл&raquo;</h2>
+                <p>В переводе с казахского &laquo;Айгүл&raquo; означает &laquo;Лунный цветок&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Добрая, мудрая, жизнерадостная, честная, душевная, веселая, великодушная, позитивная, всегда улыбается, сопереживающая, чувствительная,
+                  ранимая, поддержит словом и делом, талантливая, интересно все что касается души и энергии, добросовестная, а также беспощадная к врагам
+                </p>
+                <p>
+                  По внешности были разные описания ( но общее это &mdash; высокие и статные, большие круглые глаза, гордый, прямой взгляд и позитивное
+                  настроение, которое излучает все ее лицо.
+                </p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Aigul&raquo;</h2>
+                <p>In translation from Kazakh &laquo;Aigul&raquo; means &laquo;Moon Flower&raquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Kind, wise, joyful, honest, heartfelt, cheerful, generous, positive, always smiling, sympathetic, sensitive, vulnerable, supports with words
+                  and actions, talented, interested in everything related to the soul and energy, conscientious, and also ruthless to enemies.
+                </p>
+                <p>
+                  There were different descriptions for appearance (but what's common is &mdash; tall and majestic, large round eyes, proud, straight gaze and
+                  positive mood, which radiates her entire face.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -134,17 +199,33 @@
             <img src="./names/Baian.jpg" alt="Baian" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Баян&raquo;</h2>
-              <p>
-                Исторически это имя тюркского происхождения. На казахском языке означает как &laquo;счастливая, могучая, богатая&raquo;. Персонаж &laquo;Баян
-                сулу&raquo; в казахском эпосе является как символ любви и красоты.
-              </p>
-              <p>Она:</p>
-              <p>
-                Очень добрая, спокойная, мудрая, искренняя, очень заботливая, серьезная, рассудительная, трудолюбивая, дерзкая, честная, с сильным властным
-                характером, упертая, упрямая, целеустремленная, любит тусить, шутить и быть в обществе, заниматься большими проектами.
-              </p>
-              <p>По внешности из общих черт это: родинка над губой и изящные, тонкие черты лица, прямой нос.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Баян&raquo;</h2>
+                <p>
+                  Исторически это имя тюркского происхождения. На казахском языке означает как &laquo;счастливая, могучая, богатая&raquo;. Персонаж &laquo;Баян
+                  сулу&raquo; в казахском эпосе является как символ любви и красоты.
+                </p>
+                <p>Она:</p>
+                <p>
+                  Очень добрая, спокойная, мудрая, искренняя, очень заботливая, серьезная, рассудительная, трудолюбивая, дерзкая, честная, с сильным властным
+                  характером, упертая, упрямая, целеустремленная, любит тусить, шутить и быть в обществе, заниматься большими проектами.
+                </p>
+                <p>По внешности из общих черт это: родинка над губой и изящные, тонкие черты лица, прямой нос.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Baian&raquo;</h2>
+                <p>
+                  Historically, this name is of Turkic origin. In the Kazakh language, it means &laquo;happy, powerful, wealthy&raquo;. The character
+                  &laquo;Baian sulu&raquo; in Kazakh epics is a symbol of love and beauty.
+                </p>
+                <p>She is:</p>
+                <p>
+                  Very kind, calm, wise, sincere, very caring, serious, thoughtful, hardworking, audacious, honest, with a strong authoritative character,
+                  stubborn, persistent, goal-oriented, loves to hang out, joke around and socialize, involved in large projects.
+                </p>
+                <p>In terms of appearance, the common features are: a mole above the lip and graceful, delicate facial features, a straight nose.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -157,15 +238,29 @@
             <img src="./names/Dinara.jpg" alt="Dinara" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Динара&raquo;</h2>
-              <p>Имя арабского происхождения, означает &laquo;драгоценная, дорогая&raquo;</p>
-              <p>Она:</p>
-              <p>
-                Добрая, позитивная, шустрая, отзывчивая, целеустремленная, дерзкая, мудрая, любит шутить и разряжать обстановку, у нее классное чувство юмора.
-                Коммуникабельная, много друзей и связей, потенциал к лидерству, умеет отстаивать свою точку зрения, хороший организатор, отличное чувство вкуса
-                и стиля, любит порядок и системность, для нее очень важно материальное благополучие.
-              </p>
-              <p>Из отличительных черт с детства любит делать все сама, быстрая смена настроения и особенная обаятельность.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Динара&raquo;</h2>
+                <p>Имя арабского происхождения, означает &laquo;драгоценная, дорогая&raquo;</p>
+                <p>Она:</p>
+                <p>
+                  Добрая, позитивная, шустрая, отзывчивая, целеустремленная, дерзкая, мудрая, любит шутить и разряжать обстановку, у нее классное чувство юмора.
+                  Коммуникабельная, много друзей и связей, потенциал к лидерству, умеет отстаивать свою точку зрения, хороший организатор, отличное чувство
+                  вкуса и стиля, любит порядок и системность, для нее очень важно материальное благополучие.
+                </p>
+                <p>Из отличительных черт с детства любит делать все сама, быстрая смена настроения и особенная обаятельность.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Dinara&raquo;</h2>
+                <p>The name is of Arab origin, it means &laquo;precious, dear&raquo;</p>
+                <p>She is:</p>
+                <p>
+                  Kind, positive, brisk, responsive, goal-oriented, audacious, wise, loves to joke and lighten the mood, she has a great sense of humor.
+                  Communicative, has many friends and connections, potential for leadership, can defend her point of view, a good organizer, has an excellent
+                  sense of taste and style, loves order and systematic approach, material well-being is very important for her.
+                </p>
+                <p>Distinctive features from childhood include a love for doing everything herself, rapid mood swings, and a unique charm.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -179,19 +274,37 @@
             <div class="progress"></div>
 
             <div class="info">
-              <h2>Аватар &laquo;Дина&raquo;</h2>
-              <p>Имя арабского происхождения. Означает &laquo;верная&raquo;. Верна себе и своим любимым.</p>
-              <p>Она:</p>
-              <p>
-                Красивая, изящная, утонченная, нежная, обаятельная и артистичная. Справедливая, умная, целеустремленная, практичная и трудолюбивая. Любит
-                чистоту, порядок, организованность. Считает, что всегда права, прямая. На работе ее уважают, она является одной из авторитетной личностью.
-              </p>
-              <p>
-                Внешне строгая, недоступная и сильная, но внутри ранимая, с тонкой душевной организацией. Творческая, любознательная, очень любит читать, ее
-                талант обычно раскрывается в гуманитарных науках связанные с языками и текстом. Любит красиво одеваться и выделяться. Особенная любовь к
-                красивой обуви.
-              </p>
-              <p>Отличительные черты: Ее невозможно не заметить. В компании она будет самой яркой, харизматичной и коммуникабельной.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Дина&raquo;</h2>
+                <p>Имя арабского происхождения. Означает &laquo;верная&raquo;. Верна себе и своим любимым.</p>
+                <p>Она:</p>
+                <p>
+                  Красивая, изящная, утонченная, нежная, обаятельная и артистичная. Справедливая, умная, целеустремленная, практичная и трудолюбивая. Любит
+                  чистоту, порядок, организованность. Считает, что всегда права, прямая. На работе ее уважают, она является одной из авторитетной личностью.
+                </p>
+                <p>
+                  Внешне строгая, недоступная и сильная, но внутри ранимая, с тонкой душевной организацией. Творческая, любознательная, очень любит читать, ее
+                  талант обычно раскрывается в гуманитарных науках связанные с языками и текстом. Любит красиво одеваться и выделяться. Особенная любовь к
+                  красивой обуви.
+                </p>
+                <p>Отличительные черты: Ее невозможно не заметить. В компании она будет самой яркой, харизматичной и коммуникабельной.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Dina&raquo;</h2>
+                <p>The name is of Arab origin. It means &laquo;faithful&raquo;. Faithful to herself and her loved ones.</p>
+                <p>She is:</p>
+                <p>
+                  Beautiful, graceful, refined, gentle, charming, and artistic. Fair, smart, goal-oriented, practical, and hardworking. Loves cleanliness,
+                  order, and organization. Always considers herself right, straightforward. She's respected at work, seen as an authoritative figure.
+                </p>
+                <p>
+                  Appears strict, unapproachable, and strong on the outside, but vulnerable inside, with a sensitive soul. Creative, curious, very fond of
+                  reading, her talent usually unfolds in humanities related to languages and text. Loves to dress stylishly and stand out. Has a particular love
+                  for beautiful shoes.
+                </p>
+                <p>Distinctive features: It's impossible not to notice her. In a company, she will be the most bright, charismatic, and communicative.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -204,20 +317,39 @@
             <img src="./names/Zhanar.jpg" alt="Zhanar" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Жанар&raquo;</h2>
-              <p>
-                В переводе с казахского языка означает &laquo;блеск в глазах&raquo;, &laquo;чтобы глаза блестели, и сама сияла как солнце&raquo;. С тюркского
-                &laquo;жаны ар&raquo; &mdash; значит, чтобы была чистой душой, и могла возрождаться как птица Феникс.
-              </p>
-              <p>Она:</p>
-              <p>
-                Обоятельная, шустрая, веселая, общительная, амбициозная, энергичная, легкая, добрая, надежная и страстная. У нее сильный, волевой характер.
-                Старательная и трудолюбивая. Мудрая и смелая. Оратор от природы. Острая на язык, но из-за яркого чувства юмора никто на нее не обидится.
-              </p>
-              <p>
-                Отличительные черты: Особый огонь в глазах, громкий голос, крепкое телосложение и взрывной темперамент. Она будет участвовать во всех
-                мероприятиях, с ней всегда весело и комфортно.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Жанар&raquo;</h2>
+                <p>
+                  В переводе с казахского языка означает &laquo;блеск в глазах&raquo;, &laquo;чтобы глаза блестели, и сама сияла как солнце&raquo;. С тюркского
+                  &laquo;жаны ар&raquo; &mdash; значит, чтобы была чистой душой, и могла возрождаться как птица Феникс.
+                </p>
+                <p>Она:</p>
+                <p>
+                  Обоятельная, шустрая, веселая, общительная, амбициозная, энергичная, легкая, добрая, надежная и страстная. У нее сильный, волевой характер.
+                  Старательная и трудолюбивая. Мудрая и смелая. Оратор от природы. Острая на язык, но из-за яркого чувства юмора никто на нее не обидится.
+                </p>
+                <p>
+                  Отличительные черты: Особый огонь в глазах, громкий голос, крепкое телосложение и взрывной темперамент. Она будет участвовать во всех
+                  мероприятиях, с ней всегда весело и комфортно.
+                </p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Zhanar&raquo;</h2>
+                <p>
+                  In translation from Kazakh language, it means &laquo;glitter in the eyes&raquo;, &laquo;for eyes to shine, and she shines like the sun&raquo;.
+                  From Turkic &laquo;zhany ar&raquo; &mdash; means to have a pure soul, and could be reborn like a Phoenix.
+                </p>
+                <p>She is:</p>
+                <p>
+                  Charming, brisk, cheerful, sociable, ambitious, energetic, easygoing, kind, reliable, and passionate. She has a strong, willful character.
+                  Diligent and hardworking. Wise and bold. An orator by nature. Sharp-tongued, but no one takes offense at her due to her bright sense of humor.
+                </p>
+                <p>
+                  Distinctive features: A special fire in the eyes, a loud voice, a strong physique, and an explosive temperament. She will participate in all
+                  events, it's always fun and comfortable with her.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -230,15 +362,29 @@
             <img src="./names/Aijan.jpg" alt="Aijan" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Айжан&raquo;</h2>
-              <p>В переводе с казахского языка означает &laquo;лунная душа&raquo; или &laquo;душа луны&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Веселая, общительная, добрая, шустрая, активная, импульсивная, самодостаточная, дерзкая и энергичная. Оптимистка по жизни. Грациозная и
-                харизматичная. Любит проявлять заботу. У нее прекрасное чувство стиля и креатива. Часто очень творческие, нежные натуры. При этом уверенные в
-                себе, свободные, любят достигать, ставить цели. Про нее говорят, что она со стержнем внутри, сильна духом и волевой характер.
-              </p>
-              <p>Отличительные черты: врожденная сильная интуиция, разносторонность и эмпатичность к чувствам людей.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Айжан&raquo;</h2>
+                <p>В переводе с казахского языка означает &laquo;лунная душа&raquo; или &laquo;душа луны&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Веселая, общительная, добрая, шустрая, активная, импульсивная, самодостаточная, дерзкая и энергичная. Оптимистка по жизни. Грациозная и
+                  харизматичная. Любит проявлять заботу. У нее прекрасное чувство стиля и креатива. Часто очень творческие, нежные натуры. При этом уверенные в
+                  себе, свободные, любят достигать, ставить цели. Про нее говорят, что она со стержнем внутри, сильна духом и волевой характер.
+                </p>
+                <p>Отличительные черты: врожденная сильная интуиция, разносторонность и эмпатичность к чувствам людей.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Aijan&raquo;</h2>
+                <p>In translation from the Kazakh language, it means &laquo;moon soul&raquo; or &laquo;soul of the moon&raquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Cheerful, sociable, kind, nimble, active, impulsive, self-sufficient, daring, and energetic. Optimist in life. Graceful and charismatic. Loves
+                  to show care. She has a great sense of style and creativity. Often very creative, gentle natures. At the same time, they are confident, free,
+                  love to achieve, set goals. It is said about her that she has a core inside, is strong in spirit, and has a willful character.
+                </p>
+                <p>Distinctive features: innate strong intuition, versatility, and empathy for people's feelings.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -250,16 +396,31 @@
             </video>
             <img src="./names/Meruert.jpg" alt="Meruert" width="720" height="1280" />
             <div class="progress"></div>
+
             <div class="info">
-              <h2>Аватар &laquo;Меруерт&raquo;</h2>
-              <p>В переводе с казахского языка означает &laquo;жемчуг&raquo; или &laquo;жемчужная&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Красивая, добрая, отзывчивая, ответственная, заботливая, упорная и трудолюбивая. Милая и улыбчивая. Утонченная и нежная, при этом со стержнем
-                внутри. Открытая и душевная. Спокойная и рассудительная, любит размеренную, комфортную жизнь. Благодаря своей продуманности и практичности умеет
-                достигать своих целей. Любит наслаждаться жизнью и красотой вокруг. Меруерт обладает богатым воображением, эмпатией и альтруизмом.
-              </p>
-              <p>Отличительные черты: у Мерует часто большие, глубокие глаза и неиссякаемый оптимизм.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Меруерт&raquo;</h2>
+                <p>В переводе с казахского языка означает &laquo;жемчуг&raquo; или &laquo;жемчужная&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Красивая, добрая, отзывчивая, ответственная, заботливая, упорная и трудолюбивая. Милая и улыбчивая. Утонченная и нежная, при этом со стержнем
+                  внутри. Открытая и душевная. Спокойная и рассудительная, любит размеренную, комфортную жизнь. Благодаря своей продуманности и практичности
+                  умеет достигать своих целей. Любит наслаждаться жизнью и красотой вокруг. Меруерт обладает богатым воображением, эмпатией и альтруизмом.
+                </p>
+                <p>Отличительные черты: у Мерует часто большие, глубокие глаза и неиссякаемый оптимизм.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Meruert&raquo;</h2>
+                <p>In translation from the Kazakh language, it means &laquo;pearl&raquo; or &laquo;pearly&raquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Beautiful, kind, responsive, responsible, caring, persistent, and hardworking. Cute and smiling. Refined and gentle, yet with a spine inside.
+                  Open and heartfelt. Calm and thoughtful, loves a measured, comfortable life. Thanks to her thoughtfulness and practicality, she knows how to
+                  achieve her goals. Loves to enjoy life and beauty around. Meruert possesses rich imagination, empathy, and altruism.
+                </p>
+                <p>Distinctive features: Meruert often has large, deep eyes and inexhaustible optimism.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -271,19 +432,38 @@
             </video>
             <img src="./names/Jazira.jpg" alt="Jazira" width="720" height="1280" />
             <div class="progress"></div>
+
             <div class="info">
-              <h2>Аватар &laquo;Жазира&raquo;</h2>
-              <p>В переводе с казахского языка переводится как &laquo;широкая, цветущая степь&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Красивая, веселая, жизнерадостная, добрая, коммуникабельная и харизматичная. Жазира легко заводит новые знакомства, поэтому у нее много друзей и
-                связей. Хорошо получается работать в команде. Рядом с ней легко и комфортно. У нее хорошее чувство юмора. Жазира целеустремленная и практичная,
-                идет к своим мечтам спокойно и уверенно. Ценит комфорт и уют дома, для нее важна материальная обеспеченность.
-              </p>
-              <p>
-                Отличительные черты: Жазира обладает особой притягательностью и обаянием. У Жазиры часто ямочки на щеках. Люди тянутся к ней, любят с ней
-                общаться и ходить к ней в гости. Она самая гостеприимная хозяйка.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Жазира&raquo;</h2>
+                <p>В переводе с казахского языка переводится как &laquo;широкая, цветущая степь&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Красивая, веселая, жизнерадостная, добрая, коммуникабельная и харизматичная. Жазира легко заводит новые знакомства, поэтому у нее много друзей
+                  и связей. Хорошо получается работать в команде. Рядом с ней легко и комфортно. У нее хорошее чувство юмора. Жазира целеустремленная и
+                  практичная, идет к своим мечтам спокойно и уверенно. Ценит комфорт и уют дома, для нее важна материальная обеспеченность.
+                </p>
+                <p>
+                  Отличительные черты: Жазира обладает особой притягательностью и обаянием. У Жазиры часто ямочки на щеках. Люди тянутся к ней, любят с ней
+                  общаться и ходить к ней в гости. Она самая гостеприимная хозяйка.
+                </p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &laquo;Jazira&raquo;</h2>
+                <p>In translation from the Kazakh language, it means &laquo;wide, blooming steppe&raquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Beautiful, cheerful, joyful, kind, communicative, and charismatic. Jazira easily makes new acquaintances, so she has many friends and
+                  connections. She is good at working in a team. It's easy and comfortable to be around her. She has a good sense of humor. Jazira is
+                  goal-oriented and practical, goes towards her dreams calmly and confidently. Values comfort and cosiness at home, material security is
+                  important for her.
+                </p>
+                <p>
+                  Distinctive features: Jazira has a special attraction and charm. Jazira often has dimples on her cheeks. People are drawn to her, love to talk
+                  to her and visit her. She is the most hospitable host.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -296,15 +476,30 @@
             <img src="./names/Guljan.jpg" alt="Guljan" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Гүлжан&raquo;</h2>
-              <p>В переводе с казахского языка означает &laquo;Душа цветка&raquo; или &laquo;Душа, которая цветет&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Позитивная, добрая, активная, щедрая и отзывчивая. У нее острый ум и лидерские способности. С виду серьезная и сильная, но внутри ранимая и
-                нежная. Трудоголик, упорно и терпеливо идет к своим целям. Любит доводить дела до конца. Много учится, путешествует, развивается. Надежная, все
-                продумывают до мелочей, любит порядок и системность. Часто занимает высокие должности.
-              </p>
-              <p>Отличительные черты: Ее искренняя прямолинейность. Она всегда знает чего хочет и не изменяет своим принципам.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Гүлжан&raquo;</h2>
+                <p>В переводе с казахского языка означает &laquo;Душа цветка&raquo; или &laquo;Душа, которая цветет&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Позитивная, добрая, активная, щедрая и отзывчивая. У нее острый ум и лидерские способности. С виду серьезная и сильная, но внутри ранимая и
+                  нежная. Трудоголик, упорно и терпеливо идет к своим целям. Любит доводить дела до конца. Много учится, путешествует, развивается. Надежная,
+                  все продумывают до мелочей, любит порядок и системность. Часто занимает высокие должности.
+                </p>
+                <p>Отличительные черты: Ее искренняя прямолинейность. Она всегда знает чего хочет и не изменяет своим принципам.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Guljan&rdquo;</h2>
+                <p>Translated from Kazakh, the name means &ldquo;Soul of the flower&rdquo; or &ldquo;A soul that blossoms&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Positive, kind, active, generous, and sympathetic. She has a sharp mind and leadership abilities. Serious and strong on the outside, but
+                  vulnerable and tender on the inside. A workaholic who persistently and patiently moves towards her goals. She loves to bring affairs to an
+                  end. She studies a lot, travels, and evolves. Dependable, meticulous about all the details, loves order and systemic work. Often holds high
+                  positions.
+                </p>
+                <p>Distinguishing features: Her sincere directness. She always knows what she wants and never changes her principles.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -317,19 +512,36 @@
             <img src="./names/Aigerim.jpg" alt="Aigerim" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Әйгерім&raquo;</h2>
-              <p>В переводе с казахского языка переводится как &laquo;Луналикая красавица&raquo;</p>
-              <p>Она:</p>
-              <p>
-                Уверенная в себе красавица, знающая себе цену и верная своим убеждениям. Целеустремленная, активная, умная, самостоятельная, находчивая и
-                любознательная. Женственная, нежная и улыбчивая. Любит развиваться, учиться, познавать новое. Она душа компании. Любит выступать, быть в центре
-                внимания. Әйгерім притягивает людей своей легкостью, живостью и добротой. Стремится к самовыражению, легко генерирует новые идеи и умеет их
-                воплощать.
-              </p>
-              <p>
-                Отличительные черты: Әйгерім часто обладает мягким,задорным и звонким голосом и грамотной речью. Люди симпатизируют ей. Часто успешные,
-                публичные и самодостаточные личности.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Әйгерім&raquo;</h2>
+                <p>В переводе с казахского языка переводится как &laquo;Луналикая красавица&raquo;</p>
+                <p>Она:</p>
+                <p>
+                  Уверенная в себе красавица, знающая себе цену и верная своим убеждениям. Целеустремленная, активная, умная, самостоятельная, находчивая и
+                  любознательная. Женственная, нежная и улыбчивая. Любит развиваться, учиться, познавать новое. Она душа компании. Любит выступать, быть в
+                  центре внимания. Әйгерім притягивает людей своей легкостью, живостью и добротой. Стремится к самовыражению, легко генерирует новые идеи и
+                  умеет их воплощать.
+                </p>
+                <p>
+                  Отличительные черты: Әйгерім часто обладает мягким,задорным и звонким голосом и грамотной речью. Люди симпатизируют ей. Часто успешные,
+                  публичные и самодостаточные личности.
+                </p>
+              </div>
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Aigerim&rdquo;</h2>
+                <p>Translated from Kazakh, it means &ldquo;Moon-faced beauty&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  A confident beauty, who knows her worth and remains true to her beliefs. Goal-oriented, active, smart, independent, resourceful, and curious.
+                  Feminine, tender and always smiling. She loves self-development, learning new things and is the life of any company. She enjoys being in
+                  spotlight. Aigerim attracts people with her ease, vitality and kindness. She seeks to self-express, easily generates new ideas and knows how
+                  to implement them.
+                </p>
+                <p>
+                  Distinguishing features: Aigerim often has a soft, playful, and ringing voice along with articulate speech. People sympathize with her. She is
+                  often a successful, public, and self-sufficient personality.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -342,16 +554,31 @@
             <img src="./names/Aidana.jpg" alt="Aidana" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Айдана&raquo;</h2>
-              <p>В переводе с казахского языка означает &laquo;мудрая как Луна&raquo;</p>
-              <p>Она:</p>
-              <p>
-                Яркая, умная, честная, жизнерадостная, храбрая и сильная духом. Она уверенна в себе, обладает лидерскими качествами. Айдана &mdash; творческая
-                личность, у нее прекрасное чувство стиля и вкуса. Она умеет находить красоту в мелочах и видеть глубину в обыденных вещах. Также она обладает
-                хорошей интуицией и чувством юмора. Общительный, интеллигентный и интересный собеседник. Любит познавать новое, развиваться, анализировать,
-                добиваться своих целей. Любит быть в уединении и находить свои ответы слушая интуицию и внутренний голос.
-              </p>
-              <p>Отличительные черты: В ней одновременно сочетаются нежность и сила, творчество с аналитическим мышление.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Айдана&raquo;</h2>
+                <p>В переводе с казахского языка означает &laquo;мудрая как Луна&raquo;</p>
+                <p>Она:</p>
+                <p>
+                  Яркая, умная, честная, жизнерадостная, храбрая и сильная духом. Она уверенна в себе, обладает лидерскими качествами. Айдана &mdash; творческая
+                  личность, у нее прекрасное чувство стиля и вкуса. Она умеет находить красоту в мелочах и видеть глубину в обыденных вещах. Также она обладает
+                  хорошей интуицией и чувством юмора. Общительный, интеллигентный и интересный собеседник. Любит познавать новое, развиваться, анализировать,
+                  добиваться своих целей. Любит быть в уединении и находить свои ответы слушая интуицию и внутренний голос.
+                </p>
+                <p>Отличительные черты: В ней одновременно сочетаются нежность и сила, творчество с аналитическим мышление.</p>
+              </div>
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Aidana&rdquo;</h2>
+                <p>Translated from Kazakh, it means &ldquo;As wise as the Moon&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Bright, intelligent, honest, joyful, brave, and strong in spirit. She is confident and demonstrates leadership qualities. Aidana is a creative
+                  individual with a wonderful sense of style and taste. She knows how to find beauty in the smallest things and see depth in ordinary things.
+                  She also possesses a strong intuition and a sense of humor. She's communicative, intellectual, and an interesting conversationalist. She loves
+                  to learn new things, develop, analyze, and achieve her goals. She enjoys solitude and finds her answers by listening to her intuition and
+                  inner voice.
+                </p>
+                <p>Distinguishing features: She combines gentleness and strength, creativity with analytical thinking simultaneously.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -364,16 +591,30 @@
             <img src="./names/Raushan.jpg" alt="Raushan" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Раушан&raquo;</h2>
-              <p>С казахского языка переводится как название цветка &laquo;Роза&raquo;</p>
-              <p>Она:</p>
-              <p>
-                Добрая, яркая, заботливая, ласковая, честная и общительная. Веселая в компании, энергичная, стремительная, и организованная на работе. Обладает
-                лидерскими качествами. Сильная, целеустремленная и упрямая. При этом она вдумчивая, спокойная, умиротворенная, нежная и хрупкая. Про нее говорят
-                &laquo;всегда на позитиве&raquo;, даже когда на душе не так. Раушан очень редко делится своими проблемами и переживаниями. Ценит дружбу и своих
-                людей. Ее вдохновляет и наполняет красота, искусство, мода.
-              </p>
-              <p>Отличительные черты: Ее врожденное королевское благородство, тонкий вкус и чувство стиля присущий только ей.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Раушан&raquo;</h2>
+                <p>С казахского языка переводится как название цветка &laquo;Роза&raquo;</p>
+                <p>Она:</p>
+                <p>
+                  Добрая, яркая, заботливая, ласковая, честная и общительная. Веселая в компании, энергичная, стремительная, и организованная на работе.
+                  Обладает лидерскими качествами. Сильная, целеустремленная и упрямая. При этом она вдумчивая, спокойная, умиротворенная, нежная и хрупкая. Про
+                  нее говорят &laquo;всегда на позитиве&raquo;, даже когда на душе не так. Раушан очень редко делится своими проблемами и переживаниями. Ценит
+                  дружбу и своих людей. Ее вдохновляет и наполняет красота, искусство, мода.
+                </p>
+                <p>Отличительные черты: Ее врожденное королевское благородство, тонкий вкус и чувство стиля присущий только ей.</p>
+              </div>
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Raushan&rdquo;</h2>
+                <p>Translated from Kazakh, it corresponds to the name of the flower &ldquo;Rose&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Kind, vivid, caring, tender, honest, and sociable. She is cheerful in company, energetic, rapid, and organized at work. Demonstrates
+                  leadership qualities. Strong, goal-oriented, and stubborn. Yet she is thoughtful, calm, tranquil, tender, and fragile. People often say that
+                  she is "always positive", even when she is not feeling too happy. Raushan rarely shares her problems and concerns. She appreciates friendship
+                  and values her people. She finds inspiration and fulfillment in beauty, art, and fashion.
+                </p>
+                <p>Distinguishing features: Her inherent regal nobility, delicate taste, and sense of style unique to her.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -386,19 +627,36 @@
             <img src="./names/Botakoz.jpg" alt="Botakoz" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Ботакөз&raquo;</h2>
-              <p>С казахского языка переводится как &laquo;большие глаза, как у верблюжонка&raquo;</p>
-              <p>Она:</p>
-              <p>
-                Добрая, улыбчивая, отзывчивая, позитивная, веселая, душевная и искренняя. Красивая и утонченная. При этом стойкая, упрямая и сильная. Она
-                ответственная, трудолюбивая, целеустремленная, любит доводить дела до конца. Ценит свою самостоятельность и независимость. У нее высокая
-                интуиция и чувствительность, из-за этого она порой часто ранима. Ботакөз &mdash; творческая, любознательная личность. У нее много интересов,
-                любит читать и познавать новое. Легко находит общий язык со всеми.
-              </p>
-              <p>
-                Отличительные черты: У Ботакөз яркая внешность и часто большие, миндалевидные глаза с длинными ресницами. У нее особая любовь к животным и
-                домашним питомцам.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Ботакөз&raquo;</h2>
+                <p>С казахского языка переводится как &laquo;большие глаза, как у верблюжонка&raquo;</p>
+                <p>Она:</p>
+                <p>
+                  Добрая, улыбчивая, отзывчивая, позитивная, веселая, душевная и искренняя. Красивая и утонченная. При этом стойкая, упрямая и сильная. Она
+                  ответственная, трудолюбивая, целеустремленная, любит доводить дела до конца. Ценит свою самостоятельность и независимость. У нее высокая
+                  интуиция и чувствительность, из-за этого она порой часто ранима. Ботакөз &mdash; творческая, любознательная личность. У нее много интересов,
+                  любит читать и познавать новое. Легко находит общий язык со всеми.
+                </p>
+                <p>
+                  Отличительные черты: У Ботакөз яркая внешность и часто большие, миндалевидные глаза с длинными ресницами. У нее особая любовь к животным и
+                  домашним питомцам.
+                </p>
+              </div>
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Botakoz&rdquo;</h2>
+                <p>Translated from Kazakh, it corresponds to &ldquo;big eyes, like a camel calf's&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Kind, smiling, responsive, positive, joyful, warm-hearted, and sincere. Beautiful and delicate. Yet she is resilient, stubborn, and strong.
+                  She is responsible, hardworking, goal-oriented, and devoted to completing tasks. She values her independence and self-reliance. She has a high
+                  level of intuition and sensitivity, which sometimes makes her vulnerable. Botakoz is a creative and curious personality. She has many
+                  interests, loves to read, and discover new things. She easily finds a common language with everyone.
+                </p>
+                <p>
+                  Distinguishing features: Botakoz has a bright appearance and often large, almond-shaped eyes with long lashes. She has a special love for
+                  animals and pets.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -411,15 +669,29 @@
             <img src="./names/Asel.jpg" alt="Asel" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Әсел&raquo;</h2>
-              <p>Казахское имя &laquo;Әсел&raquo; имеет арабские корни, означает &laquo;медовая&raquo;, &laquo;сладкая как мёд&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                нежная, искренняя, добрая, честная, общительная, легкая и романтичная. Веселая и жизнерадостная. Ранимая, мягкая, чувствительная, но стойкая и
-                сильная. Отзывчивая, заботливая, сострадательная, тактичная, хороший друг и собеседник. Умеет ставить себе задачи и достигать поставленных
-                целей. Обладает аналитическими способностями, острым умом, проницательностью и сильным чувством ответственности.
-              </p>
-              <p>Отличительные черты: Ее природное нежное очарование. Әсел часто имеет ямочки на щеках или родинки на лице и над губой.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Әсел&raquo;</h2>
+                <p>Казахское имя &laquo;Әсел&raquo; имеет арабские корни, означает &laquo;медовая&raquo;, &laquo;сладкая как мёд&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  нежная, искренняя, добрая, честная, общительная, легкая и романтичная. Веселая и жизнерадостная. Ранимая, мягкая, чувствительная, но стойкая и
+                  сильная. Отзывчивая, заботливая, сострадательная, тактичная, хороший друг и собеседник. Умеет ставить себе задачи и достигать поставленных
+                  целей. Обладает аналитическими способностями, острым умом, проницательностью и сильным чувством ответственности.
+                </p>
+                <p>Отличительные черты: Ее природное нежное очарование. Әсел часто имеет ямочки на щеках или родинки на лице и над губой.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Asel&rdquo;</h2>
+                <p>The Kazakh name &ldquo;Әсел&rdquo; has Arabic roots and means &ldquo;honey&rdquo;, &ldquo;sweet as honey&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Tender, sincere, kind, honest, sociable, easy-going, and romantic. Happy and cheerful. Vulnerable, gentle, sensitive, yet resilient and
+                  strong. Responsive, caring, compassionate, tactful, a good friend, and conversationalist. Skilled in setting goals and achieving them. She
+                  possesses analytical abilities, sharp mind, insight, and a strong sense of responsibility.
+                </p>
+                <p>Distinguishing features: Her natural tender charm. Asel often has dimples on her cheeks or moles on her face and over her lip.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -432,15 +704,32 @@
             <img src="./names/Juldyz.jpg" alt="Juldyz" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Жұлдыз&raquo;</h2>
-              <p>С казахского языка переводится как &laquo;звезда&raquo;, &laquo;светящаяся&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Яркая, обаятельная, улыбчивая, самодостаточная и уверенная в себе. Смело идет по жизни и достигает своих целей. Надежная, трудолюбивая, волевая
-                и решительная. Для нее очень важны семейные ценности и ее близкие. Хозяйственная, практичная, часто любит готовить и рукодельничать, создавать
-                уют и комфорт дома. Яркий борец за справедливость. Среди своих знакомых и на работе пользуется авторитетом и уважением.
-              </p>
-              <p>Отличительные черты: Ее не возможно не заметить. Жұлдыз покоряет сердца людей своей харизмой, громким голосом и лучезарной внешностью.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Жұлдыз&raquo;</h2>
+                <p>С казахского языка переводится как &laquo;звезда&raquo;, &laquo;светящаяся&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Яркая, обаятельная, улыбчивая, самодостаточная и уверенная в себе. Смело идет по жизни и достигает своих целей. Надежная, трудолюбивая,
+                  волевая и решительная. Для нее очень важны семейные ценности и ее близкие. Хозяйственная, практичная, часто любит готовить и рукодельничать,
+                  создавать уют и комфорт дома. Яркий борец за справедливость. Среди своих знакомых и на работе пользуется авторитетом и уважением.
+                </p>
+                <p>Отличительные черты: Ее не возможно не заметить. Жұлдыз покоряет сердца людей своей харизмой, громким голосом и лучезарной внешностью.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Juldyz&rdquo;</h2>
+                <p>Translated from Kazakh, it means as &ldquo;star&rdquo;, &ldquo;shining&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Bright, charming, smiling, self-sufficient, and confident. She bravely walks through life and achieves her goals. Reliable, hardworking,
+                  determined, and decisive. Family values and relatives are very important to her. Economical, practical, often loves cooking and doing
+                  handcrafts, creating comfort at home. A strong defender of justice. Among her acquaintances and at work, she enjoys authority and respect.
+                </p>
+                <p>
+                  Distinguishing features: It is impossible not to notice her. Juldyz wins people's hearts with her charisma, loud voice, and radiant
+                  appearance.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -453,20 +742,41 @@
             <img src="./names/Gulnur.jpg" alt="Gulnur" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Гүлнұр&raquo;</h2>
-              <p>
-                Имя образована из двух слов &laquo;гүл &mdash; цветок&raquo; и &laquo;нұр &mdash; свет, луч&raquo;. С казахского языка переводится как
-                &laquo;свет цветка&raquo;, &laquo;лучезарная как цветок&raquo;.
-              </p>
-              <p>Она:</p>
-              <p>
-                Обаятельная, нежная, добрая, спокойная, уравновешенная, и жизнерадостная. При это Гүлнұр независимая, самостоятельная, волевая, ответственная,
-                активная и сильная личность. Она легко идет на контакт, у нее много подруг и нужных связей. Деятельная, предприимчивая, умеет быстро
-                анализировать и принимать решения. Стремится к новым знаниям, любит путешествовать, ходить на экскурсии и деловые встречи.
-              </p>
-              <p>
-                Отличительные черты: С Гүлнұр всегда надежно. Она может тактично решить любые вопросы. Ярко выраженные лидерские и организаторские качества.
-              </p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Гүлнұр&raquo;</h2>
+                <p>
+                  Имя образована из двух слов &laquo;гүл &mdash; цветок&raquo; и &laquo;нұр &mdash; свет, луч&raquo;. С казахского языка переводится как
+                  &laquo;свет цветка&raquo;, &laquo;лучезарная как цветок&raquo;.
+                </p>
+                <p>Она:</p>
+                <p>
+                  Обаятельная, нежная, добрая, спокойная, уравновешенная, и жизнерадостная. При этом Гүлнұр независимая, самостоятельная, волевая,
+                  ответственная, активная и сильная личность. Она легко идет на контакт, у нее много подруг и нужных связей. Деятельная, предприимчивая, умеет
+                  быстро анализировать и принимать решения. Стремится к новым знаниям, любит путешествовать, ходить на экскурсии и деловые встречи.
+                </p>
+                <p>
+                  Отличительные черты: С Гүлнұр всегда надежно. Она может тактично решить любые вопросы. Ярко выраженные лидерские и организаторские качества.
+                </p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Gulnur&rdquo;</h2>
+                <p>
+                  The name is formed from two words, &ldquo;gul - flower&rdquo; and &ldquo;nur - light, beam&rdquo;. Translated from Kazakh, it means
+                  &ldquo;light of the flower&rdquo;, &ldquo;luminous as a flower&rdquo;.
+                </p>
+                <p>She is:</p>
+                <p>
+                  Charming, tender, kind, calm, balanced, and cheerful. Yet Gulnur is independent, self-reliant, strong-willed, responsible, active, and a
+                  strong personality. She has the ability to easily connect with people, she has many friends and valuable contacts. Vigorous, enterprising,
+                  capable of quickly analyzing and making decisions. She strives for new knowledge, loves to travel, go on excursions, and attend business
+                  meetings.
+                </p>
+                <p>
+                  Distinguishing features: With Gulnur, always reliable. She can tactfully solve any issues. Strong leadership and organizational qualities are
+                  expressed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -479,16 +789,31 @@
             <img src="./names/Moldir.jpg" alt="Moldir" width="720" height="1280" />
             <div class="progress"></div>
             <div class="info">
-              <h2>Аватар &laquo;Мөлдір&raquo;</h2>
-              <p>С казахского языка переводится как &laquo;кристально чистая, прозрачная&raquo;.</p>
-              <p>Она:</p>
-              <p>
-                Изящная, грациозная, чуткая, мягкая, утонченная, ласковая и добрая. Легкая и честная в общении, что способствует глубоким и долгим отношениям.
-                Мөлдір обладает отличными коммуникативными навыками, легко находит общий язык с разными людьми, ее называют &laquo;душой компании&raquo;.
-                Сильная, решительная, настойчивая в деле, достигает поставленных целей. Имеет ясные и аналитические умственные способности, принимает взвешенные
-                решения. Также Мөлдір творческая личность с интересом к искусству и музыке.
-              </p>
-              <p>Отличительные черты: Ее открытый, светлый и добродушный характер, который приносит много тепла и радости окружающим.</p>
+              <div data-lang="ru">
+                <h2>Аватар &laquo;Мөлдір&raquo;</h2>
+                <p>С казахского языка переводится как &laquo;кристально чистая, прозрачная&raquo;.</p>
+                <p>Она:</p>
+                <p>
+                  Изящная, грациозная, чуткая, мягкая, утонченная, ласковая и добрая. Легкая и честная в общении, что способствует глубоким и долгим отношениям.
+                  Мөлдір обладает отличными коммуникативными навыками, легко находит общий язык с разными людьми, ее называют &laquo;душой компании&raquo;.
+                  Сильная, решительная, настойчивая в деле, достигает поставленных целей. Имеет ясные и аналитические умственные способности, принимает
+                  взвешенные решения. Также Мөлдір творческая личность с интересом к искусству и музыке.
+                </p>
+                <p>Отличительные черты: Ее открытый, светлый и добродушный характер, который приносит много тепла и радости окружающим.</p>
+              </div>
+
+              <div data-lang="en">
+                <h2>Avatar &ldquo;Moldir&rdquo;</h2>
+                <p>Translated from Kazakh, it means &ldquo;crystal clear, transparent&rdquo;.</p>
+                <p>She is:</p>
+                <p>
+                  Elegant, graceful, sensitive, gentle, sophisticated, tender, and kind. Easy and honest in communication, which helps establish deep and long
+                  relationships. Moldir has excellent communication skills and can easily find common ground with different people, she is considered the "life
+                  of the party". She is strong, determined, and persistent in her actions and achieves set goals. She has clear analytical intellectual
+                  abilities and makes balanced decisions. Moldir is also a creative personality with interest in art and music.
+                </p>
+                <p>Distinguishing features: Her open, bright, and kind-hearted character, which brings a lot of warmth and joy to those around her.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -504,6 +829,32 @@
         </div>
       </footer>
     </div>
+    <script>
+      (() => {
+        const supported = ['ru', 'en', 'kz'];
+        function detectLang() {
+          if (location.hash) {
+            const hashLang = location.hash.slice(1);
+            if (supported.includes(hashLang)) {
+              return hashLang;
+            }
+          }
+          const [navigatorLang] = `${navigator.language}`.split('-');
+          if (supported.includes(navigatorLang)) {
+            return navigatorLang;
+          }
+          const [defaultLang] = supported;
+          return defaultLang;
+        }
+
+        function updateLang() {
+          const detectedLang = detectLang();
+          supported.forEach(lang => document.body.classList.toggle(lang, detectedLang === lang));
+        }
+        window.addEventListener('hashchange', updateLang);
+        updateLang();
+      })();
+    </script>
 
     <script src="./main.js"></script>
     <!-- Google tag (gtag.js) -->

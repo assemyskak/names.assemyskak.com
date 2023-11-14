@@ -66,12 +66,50 @@ header .name {
   margin-left: -15rem;
 }
 
-header .social {
-  font-size: 1em;
+header .lang {
+  font-size: 2em;
   position: absolute;
   right: 0;
   bottom: 0;
-  text-align: right;
+  text-align: center;
+}
+
+header .lang a {
+  transition: color 200ms;
+  color: #ffffff99;
+}
+
+header .lang a + a:before {
+  content: '| ';
+  color: #ffffff33;
+}
+
+[data-lang] {
+  display: none;
+}
+
+.en [data-lang='en'] {
+  display: block;
+}
+
+.ru [data-lang='ru'] {
+  display: block;
+}
+
+.kz [data-lang='kz'] {
+  display: block;
+}
+
+.en a[href='#en'] {
+  color: #ffffffff;
+}
+
+.ru a[href='#ru'] {
+  color: #ffffffff;
+}
+
+.kz a[href='#kz'] {
+  color: #ffffffff;
 }
 
 header .name svg {
@@ -81,21 +119,26 @@ header .name svg .fill {
   fill: #fff;
 }
 
-header .social a {
+.social {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.social a {
   margin: 1.2em;
 }
 
-header .social a svg {
+.social a svg {
   width: 5em;
   height: 5em;
 }
 
-header .social a svg .fill {
+.social a svg .fill {
   transition: fill var(--animation-duration);
   fill: #fff;
 }
 
-header .social a:hover svg .fill {
+.social a:hover svg .fill {
   fill: #fff;
 }
 
@@ -104,10 +147,6 @@ header .social a:hover svg .fill {
     left: 0;
     width: 28rem;
     margin-left: 0;
-  }
-
-  header .social {
-    font-size: 0.5em;
   }
 }
 
