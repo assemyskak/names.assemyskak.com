@@ -51,10 +51,10 @@ names.forEach(el => {
   el.$video.addEventListener('timeupdate', e => {
     const percent = Math.ceil((e.target.currentTime / e.target.duration) * 100);
     el.$progress.style.width = `${percent}%`;
-    if (percent > 70 && window.innerWidth < 1200) {
+    if (percent > 60 && window.innerWidth < 1200) {
       el.classList.toggle('opened', true);
     }
-    if (percent > 95) {
+    if (percent > 60) {
       pauseVideo(el);
     }
   });
