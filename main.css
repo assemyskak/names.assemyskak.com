@@ -260,7 +260,7 @@ footer .name svg .fill {
   .about .me {
     order: 1;
     grid-column: 1 / 2;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
   }
 
   .about .welcome,
@@ -281,6 +281,10 @@ footer .name svg .fill {
 
   .about .project {
     order: 4;
+  }
+
+  .about .social {
+    order: 5;
   }
 }
 
