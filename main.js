@@ -1,14 +1,20 @@
 function playVideo(el) {
+  if (!el.$video) {
+    return;
+  }
   el.classList.add('playing');
-  if (el.$video && el.$video.paused) {
+  if (el.$video.paused) {
     clearTimeout(el.$video.__resetTimer);
     el.$video.play();
   }
 }
 
 function pauseVideo(el) {
+  if (!el.$video) {
+    return;
+  }
   el.classList.remove('playing');
-  if (el.$video && !el.$video.paused) {
+  if (!el.$video.paused) {
     el.__already_played = true;
     el.$video.pause();
     el.$video.__resetTimer = setTimeout(() => {
@@ -48,16 +54,19 @@ names.forEach(el => {
   el.$info = el.querySelector('.info');
   el.$video = el.querySelector('video');
   el.$progress = el.querySelector('.progress');
-  el.$video.addEventListener('timeupdate', e => {
-    const percent = Math.ceil((e.target.currentTime / e.target.duration) * 100);
-    el.$progress.style.width = `${percent}%`;
-    if (percent > 60 && window.innerWidth < 1200) {
-      el.classList.toggle('opened', true);
-    }
-    if (percent > 60) {
-      pauseVideo(el);
-    }
-  });
+
+  if (el.$video) {
+    el.$video.addEventListener('timeupdate', e => {
+      const percent = Math.ceil((e.target.currentTime / e.target.duration) * 100);
+      el.$progress.style.width = `${percent}%`;
+      if (percent > 60 && window.innerWidth < 1200) {
+        el.classList.toggle('opened', true);
+      }
+      if (percent > 60) {
+        pauseVideo(el);
+      }
+    });
+  }
 
   el.addEventListener('mousedown', e => {
     e.preventDefault();
