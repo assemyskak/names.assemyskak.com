@@ -296,7 +296,6 @@ footer .name svg .fill {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  cursor: pointer;
   aspect-ratio: 9 / 16;
 }
 
@@ -309,31 +308,17 @@ footer .name svg .fill {
   visibility: hidden;
   width: 100%;
   padding: 2em;
-  cursor: pointer;
-  transition:
-    background 500ms,
-    opacity 500ms;
+  transition: background 500ms ease 0ms, opacity 500ms ease 0ms, visibility 0ms ease 500ms;
   opacity: 0;
   background: rgba(0, 0, 0, 0);
 }
 
 .names .name.opened .info {
   visibility: visible;
+  transition: background 500ms ease 0ms, opacity 500ms ease 0ms, visibility 0ms ease 0ms;
   opacity: 1;
   color: #fff;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-@media all and (min-width: 1200px) {
-  .names .name {
-    cursor: default;
-  }
-
-  .names .name .info {
-    left: 100%;
-    visibility: visible;
-    cursor: default;
-  }
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .names .name .info h2 {
@@ -343,33 +328,6 @@ footer .name svg .fill {
 
 .names .name .info p {
   margin-bottom: 0.5em;
-}
-
-.names .name .progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  transition:
-    width 500ms linear,
-    opacity 200ms;
-  opacity: 0;
-  background-color: #fff;
-}
-
-.names .name.playing .progress {
-  opacity: 1;
-}
-
-.names .name video {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .names .name img {
@@ -382,6 +340,24 @@ footer .name svg .fill {
   opacity: 1;
 }
 
-.names .name.playing img {
-  opacity: 0;
+.container .expand {
+  font-size: 30px;
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: color 500ms ease 0ms, background-color 500ms ease 0ms;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #00000088;
+}
+
+.container .opened .expand {
+  color: #000;
+  background-color: #ffffff88;
 }
