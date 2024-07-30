@@ -1,28 +1,3 @@
-function playVideo(el) {
-  if (!el.$video) {
-    return;
-  }
-  el.classList.add('playing');
-  if (el.$video.paused) {
-    clearTimeout(el.$video.__resetTimer);
-    el.$video.play();
-  }
-}
-
-function pauseVideo(el) {
-  if (!el.$video) {
-    return;
-  }
-  el.classList.remove('playing');
-  if (!el.$video.paused) {
-    el.__already_played = true;
-    el.$video.pause();
-    el.$video.__resetTimer = setTimeout(() => {
-      el.$video.currentTime = 0;
-    }, 1000);
-  }
-}
-
 const DISTANCE = 150;
 
 function updateInfo(el, distance) {
@@ -52,21 +27,6 @@ function updateInfo(el, distance) {
 const names = document.querySelectorAll('.names .name');
 names.forEach(el => {
   el.$info = el.querySelector('.info');
-  el.$video = el.querySelector('video');
-  el.$progress = el.querySelector('.progress');
-
-  if (el.$video) {
-    el.$video.addEventListener('timeupdate', e => {
-      const percent = Math.ceil((e.target.currentTime / e.target.duration) * 100);
-      el.$progress.style.width = `${percent}%`;
-      if (percent > 60 && window.innerWidth < 1200) {
-        el.classList.toggle('opened', true);
-      }
-      if (percent > 60) {
-        pauseVideo(el);
-      }
-    });
-  }
 
   el.addEventListener('mousedown', e => {
     e.preventDefault();
@@ -84,23 +44,12 @@ names.forEach(el => {
 });
 
 function onScroll() {
-  // document.documentElement.classList.toggle('scrolled', window.scrollY > 500);
   const screenHeight = window.innerHeight || document.documentElement.clientHeight;
   const screenCenter = screenHeight / 2;
   names.forEach(el => {
     const center = el.getBoundingClientRect().top + el.clientHeight / 2;
     const distance = Math.abs(screenCenter - center);
     updateInfo(el, distance);
-    const currentDistance = window.innerWidth >= 400 ? DISTANCE : DISTANCE / 2;
-    if (distance <= currentDistance) {
-      if (!el.__already_played) {
-        playVideo(el);
-      }
-    } else {
-      // reset
-      el.__already_played = false;
-      pauseVideo(el);
-    }
   });
 }
 onScroll();
