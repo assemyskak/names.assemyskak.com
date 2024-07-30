@@ -352,12 +352,35 @@ footer .name svg .fill {
   height: 40px;
   cursor: pointer;
   transition: color 500ms ease 0ms, background-color 500ms ease 0ms;
+  animation: wobble 3s infinite;
   color: #fff;
   border-radius: 50%;
   background-color: #00000088;
 }
 
 .container .opened .expand {
+  animation: none;
   color: #000;
   background-color: #ffffff88;
+}
+
+@keyframes wobble {
+  30% {
+    transform: scale(1.0);
+  }
+  40% {
+    transform: scale(1.15);
+  }
+  42% {
+    transform: scale(0.92);
+  }
+  44% {
+    transform: scale(1.0);
+  }
+  46% {
+    transform: scale(1.03);
+  }
+  48% {
+    transform: scale(1.00);
+  }
 }
