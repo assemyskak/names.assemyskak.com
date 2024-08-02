@@ -1,0 +1,74 @@
+.names .name .info {
+}
+
+header {
+  display: none !important;
+}
+
+footer {
+  display: none !important;
+}
+
+.about {
+  display: none !important;
+}
+
+.names .name {
+  page-break-after: always !important;
+}
+
+.names .name img {
+  display: none !important;
+}
+
+.names .name .expand {
+  display: none !important;
+}
+
+.names .name .info {
+  font-size: 14px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+[data-lang="en"] {
+  margin-top: 2em;
+}
+
+[data-lang="ru"] {
+  display: block !important;
+}
+
+[data-lang="en"] {
+  display: block !important;
+}
+
+.names .name {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  aspect-ratio: 210 / 297 !important;
+}
+
+.names .name .info {
+  position: relative;
+}
+
+.names .name .info:before {
+  position: absolute;
+  right: 2em;
+  bottom: 0;
+  content: 'For more information, contact the Manager';
+  font-weight: bold;
+}
+
+.names .name .info:after {
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  content: 'Instagram: @asssemyskak';
+  font-weight: bold;
+}
+
+.names .name .info h2 {
+  font-weight: bold;
+}
