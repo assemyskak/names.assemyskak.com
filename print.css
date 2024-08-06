@@ -51,6 +51,7 @@ footer {
 
 .names .name .info {
   position: relative;
+  padding-top: 5em;
 }
 
 .names .name .info:before {
@@ -62,11 +63,11 @@ footer {
 }
 
 .names .name .info:after {
+  font-weight: bold;
   position: absolute;
   bottom: 0;
   left: 2em;
-  content: 'Instagram: @asssemyskak';
-  font-weight: bold;
+  content: 'Instagram: @assemyskak';
 }
 
 .names .name .info h2 {
